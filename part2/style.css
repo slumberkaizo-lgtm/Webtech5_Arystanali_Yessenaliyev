@@ -1,0 +1,87 @@
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 124px;
+    background-color: #1645FF;
+    grid-template-areas: 
+    "Logo Links";
+}
+.logo{
+    grid-area: Logo;
+    height: 124px;
+}
+.links{
+    display: grid;
+    grid-area: Links;
+    grid-template-columns: repeat(4, 120px);
+    gap: 20px;
+    justify-content: end;
+    align-items: center;
+    padding-right: 30px;
+}
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    background-color: #171725;
+    color: #F8E7D0;
+    border: 2px solid #1645FF;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.link:hover {
+    background-color: #1645FF;
+    color: white;
+    transform: translateY(-3px);
+}
+
+.tcontainer{
+    display: grid;
+    width: 350px;
+    height: 430px;
+    grid-template-columns: repeat(2, 175px);
+    grid-template-rows: 30px 350px 50px;
+    grid-template-areas: 
+    "Name Name"
+    "Token Token"
+    "button button";
+    background-color: blanchedalmond;
+    margin: auto;
+}
+.tcontainer img{
+    grid-area: Token;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+}
+.tcontainer p{
+    grid-area: Name;
+    column-span: 2;
+    text-align: center;
+}
+.token_list{
+    display: grid;
+    width: 350px;
+    grid-template-columns: 175px 175px;
+    grid-template-rows: 30px 350px 50px;
+    grid-template-areas: 
+    "list_name list_name"
+    "list list"
+    "btn btn";
+    margin: auto;
+    background-color: azure;
+}
+.token_list ul{
+    grid-area: list;
+    column-span: 2;
+}
+.token_list p{
+    grid-area: list_name;
+    column-span: 2;
+}

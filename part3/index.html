@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="navbar">
+            <img class="logo" src="../pic/Token.png" alt="Token navbar">
+            <div class="links">
+                <a class="link" href="../index.html">Part 1</a>
+                <a class="link" href="../part2/index.html">Part 2</a>
+                <a class="link" href="index.html">Part 3</a>
+                <a class="link" href="../part4/index.html">Part 4</a>
+            </div>
+        </div>
+        <div id="box"></div>
+
+        <div class="keyboard">
+            <p>Type smth</p>
+            <input id="textInput" type="text" placeholder="Type smth">
+            <p id="preview"></p>
+        </div>
+
+        <div class="calculator">
+            <p>Calculator</p>
+            <input id="num1" type="number" step="any" placeholder="First number" aria-label="First number">
+            <input id="num2" type="number" step="any" placeholder="Second number" aria-label="Second number">
+            <div class="operations">
+                <button id="plus">+</button>
+                <button id="minus">-</button>
+                <button id="multiply">*</button>
+                <button id="divide">/</button>
+            </div>
+            <p id="result" aria-live="polite">Result</p>
+        </div>
+    </body>
+</html>

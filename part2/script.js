@@ -21,16 +21,16 @@ fs.addEventListener("click", () => {
 });
 const tl = document.querySelector("#tl");
 const add = document.querySelector("#Addi");
-const remove = document.querySelector("#Remove")
+const remove = document.querySelector("#Remove");
 add.addEventListener("click", () => {
     const item = document.createElement("li")
     item.textContent = "new Track"
     tl.append(item);
-})
+});
 remove.addEventListener("click", () => {
     const lastItem = tl.lastElementChild;
-    if(lastItem !==null){
+    if(lastItem !==null) {
         lastItem.remove();
     }
-})
+});
 

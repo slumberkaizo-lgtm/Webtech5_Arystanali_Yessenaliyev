@@ -1,0 +1,91 @@
+.navbar{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 124px;
+    background-color: #1645FF;
+    grid-template-areas: 
+    "Logo Links";
+}
+.logo{
+    grid-area: Logo;
+    height: 124px;
+}
+.links{
+    display: grid;
+    grid-area: Links;
+    grid-template-columns: repeat(4, 120px);
+    gap: 20px;
+    justify-content: end;
+    align-items: center;
+    padding-right: 30px;
+}
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    background-color: #171725;
+    color: #F8E7D0;
+    border: 2px solid #1645FF;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.link:hover {
+    background-color: #1645FF;
+    color: white;
+    transform: translateY(-3px);
+}
+.todo{
+    width: 400px;
+    max-width: calc(100% - 40px);
+    box-sizing: border-box;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #171725;
+    color: #F8E7D0;
+    border-radius: 6px;
+    text-align: center;
+}
+#taskInput{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+.todo button{
+    padding: 10px;
+    background-color: #1645FF;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#taskList{
+    padding: 0;
+    list-style: none;
+}
+#taskList li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #1645FF;
+    border-radius: 6px;
+    text-align: left;
+}
+#taskList span{
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+.completed{
+    text-decoration: line-through;
+    color: #aaa;
+}

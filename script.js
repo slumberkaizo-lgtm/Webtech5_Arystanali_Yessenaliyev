@@ -1,0 +1,14 @@
+console.log("My name is Arystanali, SE-2525");
+alert("Hello, JavaScript World!");
+const studentName = "Arystanali"; 
+let age = 19;          
+let isStudent = true;      
+let count = 0;
+count = count + 1;
+console.log(count);
+console.log(10 + 2); 
+console.log(10 - 2); 
+console.log(10 * 2); 
+console.log(10 / 2); 
+console.log("Hello, " + studentName); 
+console.log("10" + "2");    

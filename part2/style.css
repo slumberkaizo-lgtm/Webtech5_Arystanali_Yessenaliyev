@@ -94,17 +94,6 @@ button:hover{
 button:active{
     transform: translateY(1px);
 }
-@media(max-width: 650px){
-    .cards{
-        grid-template-columns: 1fr;
-    }
-    .navbar{
-        justify-content: center;
-    }
-    .links{
-        justify-content: center;
-    }
-}
 .clicker{
     text-align: center;
 }

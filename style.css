@@ -69,7 +69,6 @@ body{
     border: 1px solid #dedee8;
     border-radius: 10px;
     box-shadow: 0 4px 14px #1717250a;
-    overflow-wrap: anywhere;
 }
 .card h2{
     margin-top: 0;
@@ -93,15 +92,4 @@ button:hover{
 }
 button:active{
     transform: translateY(1px);
-}
-@media(max-width: 650px){
-    .cards{
-        grid-template-columns: 1fr;
-    }
-    .navbar{
-        justify-content: center;
-    }
-    .links{
-        justify-content: center;
-    }
 }

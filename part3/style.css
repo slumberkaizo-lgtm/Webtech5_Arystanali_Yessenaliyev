@@ -55,7 +55,6 @@
     color: #F8E7D0;
     border-radius: 6px;
     text-align: center;
-    overflow-wrap: anywhere;
 }
 .keyboard input, .calculator input{
     box-sizing: border-box;
@@ -76,5 +75,4 @@
     border: none;
     border-radius: 6px;
     font-size: 20px;
-    cursor: pointer;
 }
